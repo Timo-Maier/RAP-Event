@@ -1,0 +1,10 @@
+managed with unmanaged save implementation in class zbp_event_bo unique;
+strict ( 2 );
+
+define behavior for Z_Event_BO //alias <alias_name>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  event ReferenceEvent parameter Z_EVENT_PAYLOAD;
+}
